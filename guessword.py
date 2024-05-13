@@ -37,7 +37,11 @@ while 1:
         if wrong_guess == 0:
             print('\nCongrats...You Won. The word is ', random_word)
             again = input('Do you like to play again?Y or N ')
-            break
+            if again == 'Y':
+                break
+            else:
+                quit()
+        
         guess = input('\nMake a guess ')
         user_guesses += guess 
         
@@ -46,4 +50,7 @@ while 1:
             print(f'Wrong...You have {chances} more chances')
             if chances == 0:
                 print('Game over... You Lose. The word is ', random_word)
-        
+                restart = input('Do you like to play again?Y or N ')
+                if restart == 'N':
+                    quit()
+                
