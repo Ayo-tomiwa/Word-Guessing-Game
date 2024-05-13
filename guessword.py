@@ -38,12 +38,4 @@ while 1:
             print('\nCongrats...You Won. The word is ', random_word)
             again = input('Do you like to play again?Y or N ')
             break
-        guess = input('\nMake a guess ')
-        user_guesses += guess 
-        
-        if guess not in random_word:
-            chances-=1
-            print(f'Wrong...You have {chances} more chances')
-            if chances == 0:
-                print('Game over... You Lose. The word is ', random_word)
         
