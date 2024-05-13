@@ -36,6 +36,7 @@ while 1:
                 
         if wrong_guess == 0:
             print('\nCongrats...You Won. The word is ', random_word)
+            again = input('Do you like to play again?')
             break
         guess = input('\nMake a guess ')
         user_guesses += guess 
